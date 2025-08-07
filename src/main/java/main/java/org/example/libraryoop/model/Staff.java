@@ -10,15 +10,9 @@ public class Staff {
     private String username;   // Tên đăng nhập của nhân viên
     private String password;   // Mật khẩu của nhân viên
 
-    /**
-     * Default constructor.
-     */
     public Staff() {
     }
 
-    /**
-     * Constructor with parameters.
-     */
     public Staff(String nameStaff, String emailStaff, String numberPhoneStaff, String addressStaff, String username, String password, String role) {
 
 
@@ -31,9 +25,6 @@ public class Staff {
         this.password = password;
     }
 
-    /**
-     * Constructor with all parameters.
-     */
     public Staff(String idStaff, String nameStaff, String emailStaff,
                  String numberPhoneStaff, String addressStaff, String role, String username, String password) {
         this.idStaff = idStaff;

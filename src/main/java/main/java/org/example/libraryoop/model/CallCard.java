@@ -3,19 +3,19 @@ package main.java.org.example.libraryoop.model;
 import java.time.LocalDateTime;
 
 public class CallCard {
-    private String idCallCard; // id thẻ mượn sách
-    private Reader reader;  // Thông tin người mượn sách
-    private Staff staff;  // Nhân viên quản lý
-    private LocalDateTime bookLoanDay;  // Ngày mượn sách
-
+    private String idCallCard; // mã thẻ
+    private Reader reader;  // người mượn sách
+    private Staff staff;   // nhân viên quản lý
+    private LocalDateTime bookLoanDay;  // ngày mượn sách
+    
     /**
-     * Default constructor.
+     * Constructer Default.
      */
     public CallCard() {
     }
 
     /**
-     * Constructor with parameters.
+     * Constructer with parameters.
      */
     public CallCard(String idCallCard, Reader reader, Staff staff, LocalDateTime bookLoanDay) {
         this.idCallCard = idCallCard;
@@ -24,9 +24,8 @@ public class CallCard {
         this.bookLoanDay = bookLoanDay;
     }
 
-
     /**
-     * Getter and Setter.
+     * Getter and Setter
      */
     public String getIdCallCard() {
         return idCallCard;
@@ -60,4 +59,3 @@ public class CallCard {
         this.bookLoanDay = bookLoanDay;
     }
 }
-
